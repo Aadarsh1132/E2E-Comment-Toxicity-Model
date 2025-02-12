@@ -1,0 +1,21 @@
+data:
+  data_path: "./data/train.csv"
+
+model:
+  max_features: 200000
+  output_sequence_length: 1800
+  batch_size: 16
+  epochs: 5
+  train_split: 0.7
+  val_split: 0.2
+  test_split: 0.1
+  model_save_path: "models/best_model.h5"
+
+mlflow:
+  tracking_uri: "http://127.0.0.1:5000"  # MLflow tracking server URI
+  experiment_name: "comment-toxicity"
+
+aws:
+  s3_bucket: "your-s3-bucket-name"       # Replace with your S3 bucket name
+  sagemaker_role: "your-sagemaker-role"  # Replace with your SageMaker role ARN
+  region: "us-east-1"                    # AWS region

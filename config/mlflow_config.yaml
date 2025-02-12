@@ -1,0 +1,4 @@
+mlflow:
+  tracking_uri: "http://localhost:5000"  # Local MLflow server or remote URI
+  experiment_name: "toxicity_classification"
+  artifact_location: "models/trained_models/"
