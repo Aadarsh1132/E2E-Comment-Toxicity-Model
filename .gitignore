@@ -169,8 +169,11 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+<<<<<<< HEAD
 
 mlruns/
 data/*.csv
 models/
 venv/
+=======
+>>>>>>> 946ebacd5bc1051fbbd95d46d18e1e707a86dddc
